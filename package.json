@@ -1,0 +1,16 @@
+{
+  "name": "mail-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.9.1",
+    "dotenv": "^16.0.1"
+  }
+}
