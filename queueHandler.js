@@ -1,3 +1,5 @@
+const actions = require('./actions');
+
 const allowedActions = new Set([
   'ticketAssignedtoUserEmail',
   'userAddedToProjectEmail',
@@ -11,7 +13,6 @@ function queueHandler(receivedData) {
   if (!allowedActions.has(action)) {
     throw new Error(`Invalid action type was provided: ${action}`);
   }
-
   return actions[action](data);
 }
 
